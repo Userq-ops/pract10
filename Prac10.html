@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Website icon" type="png"" href="c:\Users\gameg\Downloads\Сборка\icons8-куб-травы-из-minecraft-48.png">
+    <title>ДЗ Конееретно жи есс...</title>
+    <script>
+// Вход Админа или неизвестного пользователя
+var login = prompt("Введите логин:");
+if (login) {
+  if (login === "Админ") {
+    var password = prompt("Введите пароль:");
+    if (password === "Пароль") {
+      alert("Добро пожаловать, Админ!");
+    } else if (password === null) {
+      alert("Вход отменен");
+    } else {
+      alert("Неверный пароль");
+    }
+  } else if (login === null) {
+    alert("Отменено");
+  } else {
+    alert("Я вас не знаю");
+  }
+} else {
+  alert("Отменено");
+}
+
+
+
+// Могу угадать твой возрост по году рождении
+var userName = prompt("Введите ваше имя:");
+var birthYear = prompt("Введите год вашего рождения:");
+birthYear = parseInt(birthYear);
+var currentYear = new Date().getFullYear();
+var userAge = currentYear - birthYear;
+document.write(userName + ": " + userAge);
+
+
+
+
+// В каком месяце ты родился?
+let season = +prompt('Введите номер месяца'), monthNum = "";
+switch (season) {
+    case 1:
+    case 2:
+        monthNum = "Вы родились Зимой";
+        break;
+    case 3:
+    case 4:
+    case 5:
+        monthNum = "Вы родились Весной";
+        break;
+    case 6:
+    case 7:
+    case 8:
+        monthNum = "Вы родились Летом";
+        break;
+    case 9:
+    case 10:
+    case 11:
+        monthNum = "Вы родились Осенью";
+        break;
+    case 12:
+        monthNum = "Вы родились Зимой";
+        break;
+    default:
+        monthNum = "Ты кушал утром? Такие номера найдешь на Марсе";
+}
+alert(monthNum);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
